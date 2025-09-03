@@ -32,7 +32,7 @@ body{
 	scroll-behavior: smooth;
 	background-color: #1f2029;
   	/* Create the parallax scrolling effect */
-  	background: url("/img/bg.svg");
+  	/*background: url("/img/bg.svg");*/
  	background-attachment: fixed;
  	background-position: center;
   	background-repeat: repeat;
@@ -178,10 +178,10 @@ a:hover {
 .hero-wrapper {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	width: 100vw;
-	min-height: 100vh;
+	min-height: 30vh;
 }
   
 .hero {
@@ -622,10 +622,18 @@ a:hover {
   }
 
   @media (max-width: 768px) {
-	.footer__version {
+  }
+  .footer__version {
 	  margin: 15px auto 0;
 	}
 	.footer__visits {
 		margin: 25px auto 0;
 	  }
-  }
+	  a.links {
+      color: #ff0000;
+    font-size: 27px;
+text-decoration: underline;
+	  }
+	  ul {
+		    padding: 20px;
+	  }
