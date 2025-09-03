@@ -22,6 +22,43 @@
     }
     .content {position: relative; padding: 6rem 2rem; color: #e5e9f0;}
 
+     body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Top bar container */
+    .topbar {
+      background-color: #222;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    /* Links inside the bar */
+    .topbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    /* Hover effect */
+    .topbar a:hover {
+      background-color: #575757;
+    }
+
+    /* Page content spacing */
+    .content {
+      padding-top: 60px; /* prevents content from hiding behind top bar */
+    }
+
     </style>
     <link rel="stylesheet" href="/css/main.css?v=11" />
    
@@ -85,6 +122,17 @@
       retina_detect: true
     });
     </script>
+     <!-- Navigation bar -->
+  
+     <div class="topbar">
+    <a href="index2.html">Page 1</a>
+    <a href="index.html">Page 2</a>
+    <a href="index3.html">Page 3</a>
+  </div>
+
+  <!-- Example game/content area -->
+  <div class="content">
+  </div>
         </body>
       </html>
 
