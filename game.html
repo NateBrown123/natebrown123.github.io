@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,8 +13,16 @@
     <meta name="language" content="English" />
     <title>Home - Google Drive</title>
      <link rel="icon" type="image/png" href="img/drive.png">
-     <style>
-      html, body {height:100%; margin:0;}
+     
+      
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoomed Fullscreen Iframe</title>
+  <style>
+    html, body {height:100%; margin:0;}
     #bg {
       position: fixed; inset: 0; z-index: -1; /* sits behind your content */
       background: #2e3440; /* Nord-ish background to match HU’s palette */
@@ -74,6 +81,56 @@
     .content {
       padding-top: 70px; /* prevents content from hiding behind top bar */
     }
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #000;
+    }
+
+    /* Wrapper keeps aspect ratio of original iframe */
+    .iframe-wrapper {
+      width: 800px;
+      height: 500px;
+      overflow: hidden;
+      position: relative;
+      transition: all 0.4s ease;
+    }
+
+    .iframe-wrapper.fullscreen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 999;
+      background: #000;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      transition: transform 0.4s ease;
+      transform-origin: center center;
+    }
+
+    /* Zoom effect */
+    .iframe-wrapper.fullscreen iframe {
+      transform: scale(1.45); /* adjust zoom factor */
+    }
+
+    button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 1000;
+    }
     </style>
     <link rel="stylesheet" href="/css/main.css?v=12" />
     <link
@@ -87,19 +144,10 @@
      <div id="bg"></div>
     <div class="hero-wrapper">
       <div class="hero">
-    <h1 class="hero-main" style="color:#ce5656";>Proxy Hub<span class="hero-alt"></span></h1>
-        <span  style="color:#c8cecf";><p>This is the page with links to unblock proxys they allows </p>
-          <p> you too look up anyting even block app from your county.</p>
-        <p> I will update them regurlely to make sure they all are unblocked</p></span>    
+    <h1 class="hero-main" style="color:#ce5656";>Games<span class="hero-alt"></span></h1>
+        <span  style="color:#c8cecf";><p></p></span>    
     </div>
          </div>
-         <ul>
-         <Li> <a class="links" href="https://play.szvy.win/" target="_blank">Szvy central V2 (proxy and games) </a></li>
-         <li> <a class="links" href="https://sigmamath.global.ssl.fastly.net" target="_blank">Szvy central V2 (alt link) (proxy and games)</a></li>
-          <li> <a class="links" href="https://nebx.above.gay/search/" target="_blank">Nebula-x (proxy and games)</a></li>
-          <Li> <a class="links" href="https://t9os.vercel.app/t9os.html" target="_blank">T9os (proxy and games) </a></li>
-            <Li> <a class="links" href="https://t9os.com/t9os.html" target="_blank">T9os (alt link) (proxy and games) </a></li>
-          </ul>
            <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script>
     /* Minimal config close to HU’s look: dots + connecting lines */
@@ -141,10 +189,21 @@
 
   <!-- Example game/content area -->
   <div class="content">
+<div class="iframe-wrapper" id="iframeContainer">
+    <iframe id="myIframe" src="https://play.tetris.com" scrolling="no"></iframe>
+  </div>
+
+  <button onclick="toggleFullscreen()">Toggle Zoom Fullscreen</button>
+
+  <script>
+    function toggleFullscreen() {
+      let container = document.getElementById("iframeContainer");
+      container.classList.toggle("fullscreen");
+    }
+  </script>
+
+
+
+    </div>
         </body>
       </html>
-
-   
- 
-
-    
