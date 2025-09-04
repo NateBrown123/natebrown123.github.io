@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="UBG100" />
+    <meta name="description" content="Play your favorite online games free now!" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <title>Home - Google Drive</title>
+    <link rel="icon" type="image/png" href="img/drive.png">
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zoomed Fullscreen Iframe</title>
+        <style>
+            html,
+            body {
+                height: 100%;
+                margin: 0;
+            }
+
+            #bg {
+                position: fixed;
+                inset: 0;
+                z-index: -1;
+                /* sits behind your content */
+                background: #2e3440;
+                /* Nord-ish background to match HU’s palette */
+            }
+
+            .content {
+                position: relative;
+                padding: 6rem 2rem;
+                color: #e5e9f0;
+            }
+
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+
+            /* Top bar container */
+            .topbar {
+                background-color: #222;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 20px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 60px;
+                z-index: 1000;
+            }
+
+            /* Logo + site name */
+            .logo {
+                display: flex;
+                align-items: center;
+                color: white;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .logo img {
+                height: 35px;
+                width: 35px;
+                margin-right: 10px;
+            }
+
+            /* Links container */
+            .nav-links {
+                display: flex;
+            }
+
+            .nav-links a {
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            /* Hover effect */
+            .nav-links a:hover {
+                background-color: #575757;
+            }
+
+            /* Page content spacing */
+            .content {
+                padding-top: 70px;
+                /* prevents content from hiding behind top bar */
+            }
+
+            .iframe-container {
+                display: flex;
+                justify-content: center;
+                /* centers horizontally */
+                align-items: center;
+                /* centers vertically (if parent has height) */
+                height: 100vh;
+                /* optional: makes parent fill full screen */
+            }
+
+            iframe {
+                border: 2px solid #333;
+                border-radius: 10px;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+        <link rel="stylesheet" href="/css/main.css?v=13" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous" />
+    </head>
+
+<body data-ess="true">
+    <div id="bg"></div>
+    <div class="hero-wrapper">
+        <div class="hero">
+            <h1 class="hero-main" style="color:#ce5656" ;>Games<span class="hero-alt"></span></h1>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Navigation bar -->
+    <div class="topbar">
+        <!-- Logo and site name -->
+        <div class="logo">
+            <img src="img/ghost.jpg" alt="Logo">
+            Unblocked Games heaven
+        </div>
+
+        <!-- Links -->
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index2.html">Proxy Hub</a>
+            <a href="index3.html">Games</a>
+            <a href="index4.html">apps</a>
+            <a href="index5.html">settingss</a>
+        </div>
+    </div>
+
+
+  
+
+<iframe  align-items: center; justify-content: center; width="1500" height="900" src="https://gnhustgames.github.io/football-bros/" scrolling="no" frameborder="0" allowtransparency="true" id="gameFrame" name="gameFrame"></iframe>
+
+
+
+
+
+
+
+    <script>
+        /* Minimal config close to HU’s look: dots + connecting lines */
+        particlesJS('bg', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#fff" },
+                shape: { type: "circle" },
+                opacity: { value: 0.6 },
+                size: { value: 3, random: true },
+                line_linked: { enable: true, distance: 150, color: "#fff", opacity: 0.35, width: 1 },
+                move: { enable: true, speed: 1, direction: "none", out_mode: "out" }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: { onhover: { enable: true, mode: "grab" }, onclick: { enable: false }, resize: true },
+                modes: { grab: { distance: 140, line_linked: { opacity: 0.6 } } }
+            },
+            retina_detect: true
+        });
+    </script>
+
+</body>
+
+</html>
